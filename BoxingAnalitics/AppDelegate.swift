@@ -10,10 +10,18 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
+    var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        let navVC = UINavigationController(rootViewController: ViewController() )
+        navVC.viewControllers.first?.navigationItem.largeTitleDisplayMode = .always
+        navVC.navigationBar.prefersLargeTitles = true
+        window.rootViewController = navVC
+        window.makeKeyAndVisible()
+        self.window = window
+        
         return true
     }
 
