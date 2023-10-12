@@ -12,7 +12,10 @@
 		423636B72ACEEAD800526A4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423636B62ACEEAD800526A4F /* ViewController.swift */; };
 		423636BC2ACEEADA00526A4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 423636BB2ACEEADA00526A4F /* Assets.xcassets */; };
 		423636BF2ACEEADA00526A4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423636BD2ACEEADA00526A4F /* LaunchScreen.storyboard */; };
-		423636C72ACEEB4B00526A4F /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423636C62ACEEB4B00526A4F /* VideoViewController.swift */; };
+		4255A92F2AD3F73D00093125 /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4255A92E2AD3F73D00093125 /* ImageUtils.swift */; };
+		4255A9312AD3F74C00093125 /* Detection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4255A9302AD3F74C00093125 /* Detection.swift */; };
+		4255A9352AD3F76300093125 /* yolov5s.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4255A9342AD3F76300093125 /* yolov5s.swift */; };
+		42F9C0E72AD7F9BD006FF736 /* test.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 42F9C0E62AD7F9BD006FF736 /* test.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +26,10 @@
 		423636BB2ACEEADA00526A4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		423636BE2ACEEADA00526A4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		423636C02ACEEADA00526A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		423636C62ACEEB4B00526A4F /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		4255A92E2AD3F73D00093125 /* ImageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
+		4255A9302AD3F74C00093125 /* Detection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detection.swift; sourceTree = "<group>"; };
+		4255A9342AD3F76300093125 /* yolov5s.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = yolov5s.swift; sourceTree = "<group>"; };
+		42F9C0E62AD7F9BD006FF736 /* test.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = test.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,12 @@
 			isa = PBXGroup;
 			children = (
 				423636B22ACEEAD800526A4F /* AppDelegate.swift */,
+				4255A92E2AD3F73D00093125 /* ImageUtils.swift */,
+				4255A9302AD3F74C00093125 /* Detection.swift */,
 				423636B42ACEEAD800526A4F /* SceneDelegate.swift */,
+				42F9C0E62AD7F9BD006FF736 /* test.mlmodel */,
+				4255A9342AD3F76300093125 /* yolov5s.swift */,
 				423636B62ACEEAD800526A4F /* ViewController.swift */,
-				423636C62ACEEB4B00526A4F /* VideoViewController.swift */,
 				423636BB2ACEEADA00526A4F /* Assets.xcassets */,
 				423636BD2ACEEADA00526A4F /* LaunchScreen.storyboard */,
 				423636C02ACEEADA00526A4F /* Info.plist */,
@@ -137,9 +146,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4255A9352AD3F76300093125 /* yolov5s.swift in Sources */,
 				423636B72ACEEAD800526A4F /* ViewController.swift in Sources */,
+				4255A9312AD3F74C00093125 /* Detection.swift in Sources */,
+				42F9C0E72AD7F9BD006FF736 /* test.mlmodel in Sources */,
 				423636B32ACEEAD800526A4F /* AppDelegate.swift in Sources */,
-				423636C72ACEEB4B00526A4F /* VideoViewController.swift in Sources */,
+				4255A92F2AD3F73D00093125 /* ImageUtils.swift in Sources */,
 				423636B52ACEEAD800526A4F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +299,7 @@
 				DEVELOPMENT_TEAM = N3J5DWL6V6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BoxingAnalitics/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "saved video";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -314,6 +327,7 @@
 				DEVELOPMENT_TEAM = N3J5DWL6V6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BoxingAnalitics/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "saved video";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
